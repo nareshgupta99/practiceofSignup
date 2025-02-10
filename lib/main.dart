@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sign_up/view/black_signup_view.dart';
+import 'package:sign_up/view/signup_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-
-      ),
-      home: 
+      debugShowCheckedModeBanner: false,
+      home: BlackSignupView()
     );
   }
 }
